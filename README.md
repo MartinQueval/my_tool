@@ -5,12 +5,8 @@ MyTool est un outil en ligne de commande permettant de lire un fichier uproject 
 
 ## Installation
 1. Assurez-vous d'avoir Rust installé sur votre machine.
-2. Clonez le dépôt ou téléchargez le projet.
-3. Compilez l'outil avec :
-   ```sh
-   cargo build --release
-   ```
-4. Exécutez l'outil en ligne de commande.
+2. Clonez le dépôt ou téléchargez le projet et placer à la racine d'Unreal from Source.
+3. Exécutez l'outil en ligne de commande.
 
 ## Utilisation
 
@@ -19,7 +15,7 @@ Affiche les informations principales d'un fichier `.uproject`.
 ```sh
 cargo run -- <chemin_du_projet.uproject> show-infos
 ```
-Dans le répertoire du projet.
+Dans le répertoire du tool.
 
 **Exemple :**
 ```sh
@@ -31,7 +27,7 @@ Compile le projet Unreal spécifié.
 ```sh
 cargo run -- <chemin_du_projet.uproject> build
 ```
-Dans le répertoire du projet.
+Dans le répertoire du tool.
 
 **Exemple :**
 ```sh
@@ -43,7 +39,7 @@ Génère un package du projet Unreal et le stocke dans le dossier de sortie spé
 ```sh
 cargo run -- <chemin_du_projet.uproject> package <chemin_de_sortie>
 ```
-Dans le répertoire du projet.
+Dans le répertoire du tool.
 
 **Exemple :**
 ```sh

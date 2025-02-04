@@ -35,7 +35,7 @@ fn main() {
             if let Some(args) = matches.subcommand_matches("package") {
                 let file = matches.get_one::<String>("file").unwrap();
                 if let Some(output) = args.get_one::<String>("output") {
-                    println!("Packaging du projet : {}\nChemin de sortie : {}", file, output);
+                    println!("📦 Packaging du projet : {}\n📂 Chemin de sortie : {}", file, output);
                     commands::package_project(file, output);
                 } else {
                     eprintln!("Erreur : L'argument <output> est requis pour la commande `package`.");
